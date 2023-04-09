@@ -1,0 +1,39 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "incremental": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@env": ["env.ts"],
+      "@apis/*": ["apis/*"],
+      "@components/*": ["components/*"],
+      "@configs/*": ["configs/*"],
+      "@layouts/*": ["layouts/*"],
+      "@screens/*": ["screens/*"],
+      "@assets/*": ["assets/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@types/*": ["types/*"],
+      "@states/*": ["states/*"],
+      "@styles/*": ["styles/*"]
+    }
+  },
+  "include": ["*.ts", "*.tsx", "**/*.ts", "**/*.tsx", "babel.config.js"],
+  "exclude": ["node_modules"]
+}
