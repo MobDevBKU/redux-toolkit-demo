@@ -33,6 +33,7 @@ export const HomeScreen: IComponent = ({ navigation }: any) => {
   const handleLogout = () => {
     // Dispatch the loginThunk with the email and password as arguments
     dispatch(logoutSuccess());
+    localStorage.removeItem("accessToken");
     navigation.navigate("Authentication", {});
   };
 
