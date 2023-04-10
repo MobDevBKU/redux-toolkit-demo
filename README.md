@@ -1,6 +1,17 @@
 # EXPO Template
 
-> Helping when start new frontend project
+> For redux toolkit demo
+
+## Prerequisite
+
+```bash
+npm install --save @react-native-async-storage/async-storage @reduxjs/toolkit react-redux redux redux-persist
+```
+or
+
+```bash
+yarn add @react-native-async-storage/async-storage @reduxjs/toolkit react-redux redux redux-persist
+```
 
 This is Expo template, which support auto format with eslint and intergrate `husky` for code checking before commit. This will help in smooth out project building.
 
